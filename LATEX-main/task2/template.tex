@@ -1,0 +1,58 @@
+\documentclass{article}
+\usepackage[T2A]{fontenc}
+\usepackage[cp1251]{inputenc}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{mathrsfs}
+\usepackage[12pt]{extsizes}
+\usepackage{fancyvrb}
+\usepackage{indentfirst}
+\usepackage[
+  left=2cm, right=2cm, top=2cm, bottom=2cm, headsep=0.2cm, footskip=0.6cm, bindingoffset=0cm
+]{geometry}
+\usepackage[english,russian]{babel}
+\usepackage{bm}
+
+\begin{document}
+	\section*{Вариант 16}
+	
+	Учет малой, но конечной диссипации энергии в математических моделях
+	элементов КДС с распределенными по пространству параметрами приводит к тому,
+	что $D(\lambda,\mathbf{p},\mathbf{s})$ и $Q_j(\lambda,\mathbf{p},\mathbf{s})$ аналитичны по $\lambda$ при
+	$\operatorname{Re}\lambda > \sigma_0$, $\sigma \in (-\infty,0)$.
+	
+	Под обобщенной степенью характеристического квазимногочлена понимается такое
+	$n \in \mathbb{R}$, что
+	
+	\begin{equation}
+		\lim_{\lambda \to \infty}
+		\lambda^{-n} D(\lambda,\mathbf{p},\mathbf{s})
+		=
+		C_a(p,s),
+		\qquad
+		0 < |C_a(\mathbf{p},\mathbf{s})| < \infty,
+		\qquad
+		\operatorname{\Re}\lambda > -\infty.
+	\end{equation}
+	
+	Пусть $\Omega_p^{(st)}(\mathbf{s}) \subset \mathbb{R}^{N_p}$ ---
+	область устойчивости КДС в пространстве параметров обратных связей $\mathbf{p}$
+	при некотором фиксированном значении набора параметров $\mathbf{s}$.
+	
+	Из теорем об устойчивости КДС следует, что проверка принадлежности параметров
+	обратных связей $\mathbf{p}$ области устойчивости сводится к проверке условия
+	
+	\begin{equation}
+		\mathbf{p} \in \Omega_p^{(st)}(\mathbf{s})
+		\Rightarrow
+		\Delta_{0 \leq \omega \leq \infty}
+		\arg D(i\omega,\mathbf{p},\mathbf{s})
+		=
+		\frac{n\pi}{2}.
+	\end{equation}
+	
+\end{document}
+
+
